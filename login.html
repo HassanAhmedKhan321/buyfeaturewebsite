@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    <title>Document</title>
+</head>
+<!-- ------------------------------------Navbar--------------------------------------------- -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">BuyFeature</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a class="nav-link" href="#"> <i class="fa fa-shopping-cart"></i>Cart <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="login.html">LogIn <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="signup.html">SignUp <span class="sr-only">(current)</span></a>
+  </div>
+</nav>
+<body class="body-1">
+  <div class="container">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card">
+        <div class="card-header">
+          <h3 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 36px;">Log In</h3>
+          <div class="d-flex justify-content-end social_icon">
+            <span><i class="fa fa-facebook-square"></i></span>
+            <span><i class="fa fa-google-plus-square"></i></span>
+            <span><i class="fa fa-twitter-square"></i></span>
+          </div>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Enter your name" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+              
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-key"></i></span>
+              </div>
+              <input type="password" class="form-control" placeholder="Enter password" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            </div>
+            <div class="row align-items-center remember">
+              <input type="checkbox">Remember Me
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Login" style="font-family: 'Times New Roman', Times, serif;" class="btn float-right login_btn">
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-center links">
+            Don't have an account?<a href="signup.html">Sign Up</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="#">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------footer------------------------------- -->
+  <section class="footer">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Return Policy</p>
+                <p>Discount Coupons</p>
+            </div>
+            <div class="col-md-3">
+                <h1>Company</h1>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Career</p>
+                <p>Affiliate</p>
+            </div>
+            <div class="col-md-3">
+                <h1>Follow Us On</h1>
+                <p> <i class="fa fa-facebook-official"></i> Facebook</p>
+                <p> <i class="fa fa-youtube-play"></i> Youtube</p>
+                <p> <i class="fa fa-linkedin"></i> Linkedin</p>
+                <p> <i class="fa fa-twitter"></i> Twitter</p>
+            </div>
+            <div class="col-md-3 footer-image">
+                <h1>Download App</h1>
+                <img src="images/android-app-store-logo-png-2.png" alt="" height="120px">
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><i class="fa fa-copyright"></i>BuyFeature 2020</p>
+    </div>
+</section>
+<script>
+    function openmenu() {
+        document.getElementById("side-menu").style.display = "block";
+        document.getElementById("menu-btn").style.display = "none";
+        document.getElementById("close-btn").style.display = "block";
+    }
+    function closemenu() {
+        document.getElementById("side-menu").style.display = "none";
+        document.getElementById("menu-btn").style.display = "block";
+        document.getElementById("close-btn").style.display = "none";
+    }
+</script>
+</body>
+</html>
